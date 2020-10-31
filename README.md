@@ -16,7 +16,7 @@
 
 威斯康星乳腺癌数据集一共包含569个恶性或者良性肿瘤细胞样本，分为两类，总共包含6个属性，该数据集的部分数据展示如下：
 
-<center>![breast_cancer](https://i.loli.net/2020/09/26/1NaUlwb6FpoiEHc.png)</center>
+![breast_cancer](https://i.loli.net/2020/09/26/1NaUlwb6FpoiEHc.png)
 
 其中各个属性的描述具体见下表：
 
@@ -54,7 +54,7 @@
 
 葡萄酒数据集包含178个样本，也分为三类(1, 2, 3)，其中第一类包含59个样本，第二类包含71个样本，第三类包含48个样本，在该数据集中包含了三种酒13种不同成分的数量，下面是该数据集的部分数据：
 
-<center>![wine](https://i.loli.net/2020/09/26/4YIQL2PvXkhTgCz.png)</center>
+![wine](https://i.loli.net/2020/09/26/4YIQL2PvXkhTgCz.png)
 
 其中各属性的描述如下：
 
@@ -83,7 +83,7 @@
 
 KNN，即K-Nearest Neighbors，其核心思路为：一个样本与数据集中的K个样本最相似，如果这K个样本中的大多数属于某个类别，则该样本也属于这个类别。如下图所示，绿色圆要被决定赋予哪个类，当K=3时，由于红色三角形占大多数，因此绿色圆属于红色三角形，如果K=5，由于蓝色正方形占大多数，因此绿色圆属于蓝色正方形类。
 
-<center>![img](https://i.loli.net/2020/09/26/Elg8y6psaWHf4V2.jpg)</center>
+![img](https://i.loli.net/2020/09/26/Elg8y6psaWHf4V2.jpg)
 
 由此说明KNN算法的结果很大程度上取决于K的选择，而在KNN算法中度量对象间的相似性一般采用欧式距离或曼哈顿距离。在训练集中的数据和标签已知的情况下，输入测试数据，将测试数据的特征与训练集中对应的特征进行相互比较，找到训练集中与之最为相似的前K个数据，则该测试数据对应的类别就是K个数据中出现次数最多的那个分类，其算法的描述为：
 
@@ -123,7 +123,7 @@ $$
 - 内部结点(若干个)：对应特征属性测试
 - 叶结点：代表决策的结果
 
-<center>![2019-09-17-jiegou](https://i.loli.net/2020/09/30/x6TJEqlNGDmRgkp.jpg)</center>
+![2019-09-17-jiegou](https://i.loli.net/2020/09/30/x6TJEqlNGDmRgkp.jpg)
 
 预测时，在树的内部节点处用某一属性值进行判断，根据判断结果决定进入哪个分支节点，直到到达叶节点处，得到分类结果。
 
@@ -134,7 +134,7 @@ $$
 
 三种典型的决策树算法为：
 
-<center>![v2-a8ae0794562f548e0b0e6f21733da7fa_1440w](https://i.loli.net/2020/09/30/5UXRZLqoxIKy9an.jpg)</center>
+![v2-a8ae0794562f548e0b0e6f21733da7fa_1440w](https://i.loli.net/2020/09/30/5UXRZLqoxIKy9an.jpg)
 
 本文采用的是CART算法，采用基尼系数来选择划分属性，基尼系数的定义如下：
 $$
