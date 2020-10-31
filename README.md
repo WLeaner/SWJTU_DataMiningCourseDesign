@@ -1,6 +1,7 @@
 # SWJTU_DataMiningCourseDesign
 
 声明：本项目只是单纯的编程实践，为了帮助理解也写了下面的说明文档，其中有不少内容出自其他博客(见文末参考博客)
+
 若公式无法显示，建议下载插件Maxjax Plugin for Github
 
 环境介绍：Python3.6.3
