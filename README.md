@@ -16,7 +16,7 @@
 
 威斯康星乳腺癌数据集一共包含569个恶性或者良性肿瘤细胞样本，分为两类，总共包含6个属性，该数据集的部分数据展示如下：
 
-![breast_cancer](https://i.loli.net/2020/09/26/1NaUlwb6FpoiEHc.png)
+<center>![breast_cancer](https://i.loli.net/2020/09/26/1NaUlwb6FpoiEHc.png)</center>
 
 其中各个属性的描述具体见下表：
 
@@ -54,7 +54,7 @@
 
 葡萄酒数据集包含178个样本，也分为三类(1, 2, 3)，其中第一类包含59个样本，第二类包含71个样本，第三类包含48个样本，在该数据集中包含了三种酒13种不同成分的数量，下面是该数据集的部分数据：
 
-![wine](https://i.loli.net/2020/09/26/4YIQL2PvXkhTgCz.png)
+<center>![wine](https://i.loli.net/2020/09/26/4YIQL2PvXkhTgCz.png)</center>
 
 其中各属性的描述如下：
 
