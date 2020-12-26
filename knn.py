@@ -55,7 +55,7 @@ def testDataset(data,target,k):
     return np.array(f1_scores).mean()
 
 if __name__ == "__main__":
-
+    #尝试k取值从1到19
     data,target = loadIris()
     for i in range(1,20):
         f1_mean = testDataset(data,target,i)
