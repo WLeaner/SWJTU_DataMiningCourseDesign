@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from sklearn.utils import shuffle
 from load import loadIris,loadWine,loadBreastCancer
 from scipy.spatial.distance import cdist
 from sklearn.model_selection import StratifiedKFold
@@ -43,7 +44,7 @@ def testDataset(data,target,k):
     func：加载属性函数
     k：多少折，默认为10
     """
-    skf = StratifiedKFold(n_splits=10 ,random_state=0)
+    skf = StratifiedKFold(n_splits=10 ,random_state=0,shuffle=True)
     f1_scores = []
     #10折交叉验证
     for train_index, test_index in skf.split(data,target):
@@ -55,18 +56,18 @@ def testDataset(data,target,k):
     return np.array(f1_scores).mean()
 
 if __name__ == "__main__":
-    #尝试k取值从1到19
+    #尝试k取值从3到15
     data,target = loadIris()
-    for i in range(1,20):
+    for i in range(3,15):
         f1_mean = testDataset(data,target,i)
         print('k = {},  the mean f1 score of iris is {}'.format(i,f1_mean))
 
     data,target = loadWine()
-    for i in range(1,20):
+    for i in range(3,15):
         f1_mean = testDataset(data,target,i)
         print('k = {}, the mean f1 score of wine is {}'.format(i, f1_mean))
 
     data,target = loadBreastCancer()
-    for i in range(1,20):
+    for i in range(3,15):
         f1_mean = testDataset(data,target,i)
         print('k = {}, the mean f1 score of breast cancer is {}'.format(i,f1_mean))

@@ -119,7 +119,7 @@ def testDataset(data,target):
     target：标签
     cut：决定是否剪枝，默认为False即不剪枝
     """
-    skf = StratifiedKFold(n_splits=10 ,random_state=0)
+    skf = StratifiedKFold(n_splits=10 ,random_state=0,shuffle=True)
     f1_scores = []
     #10折交叉验证
     for train_index, test_index in skf.split(data,target):
